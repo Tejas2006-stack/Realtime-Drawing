@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Realtime Drawing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCS6VB7OWmjMs1-NH3l9VM6I_9RdCVDpdU",
+    authDomain: "kwitter-1befc.firebaseapp.com",
+    databaseURL: "https://kwitter-1befc.firebaseio.com",
+    projectId: "kwitter-1befc",
+    storageBucket: "kwitter-1befc.appspot.com",
+    messagingSenderId: "1023404879172",
+    appId: "1:1023404879172:web:6781ea906401f2f8947b11",
+    measurementId: "G-621V3L6R8Z"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+
+<body>
+<center>
+  <h3 class="btn btn-info heading">Changing width, height and postion of a square in Realtime
+    <br>
+    <span class="note">NOTE - Get your left and right wrist closer 
+      to reduce the size of the square and to increase the size of 
+      the square keep your left and right wrist far from each other. 
+      Move you nose to move the square</span>
+    <br>
+    <span id="square_side"></span>
+
+  </h3>
+</center>
+<div class="copy_right_footer">
+  ©Tejas Chakrabarti 2020
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
